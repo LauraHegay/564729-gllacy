@@ -8,13 +8,12 @@
     <header class="main-header">
       <div class="logo">
         <a class="main-header-logo" href="index.html">
-          <img src="img/index-logo.svg" width="154" height="64" alt="Логотип магазина мороженного «Глейси»">
+          <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженного «Глейси»">
         </a>
       </div>
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li class="site-navigation-current">
-            <li>
               Каталог
               <ul class="site-navigation-submenu">
                 <li><a class="novelty" href="novelty.html">Новинки</a></li>
@@ -28,9 +27,12 @@
           <li><a href="about-company">О Компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="search">Поиск</li>
-          <li class="login-link">Вход</li>
-          <li class="shopping-cart-full">2 товара</li>
+          <li class="search">
+            <button class="button user-menu-button" type="button" >Поиск</button>
+          </li>
+          <li><a class="button user-menu-button" href="login.html">Вход</a></li>
+          <li class="shopping-cart-full">
+            <button class="button user-menu-button" type="button">2 товара</button></li>
         </ul>
       </nav>
       <p class="time-work">С 10 до 20, ежедневно</p>
@@ -185,22 +187,59 @@
       </ul>
       <div class="footer-copyright">
         <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/htmlacademy-logo.svg" width="108" height="39" alt="Логотип HTML Academy">
+          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
         </a>
         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>&copy; 2017</p>
       </div>
     </footer>
     <section class="modal modal-login">
       <h2 class="visually-hidden">Личный кабинет</h2>
-      <!-- Здесь будет форма для входа в личный кабинет -->
+      <p class="visually-hidden">Введите свою электронную почту и пароль.</p>
+      <form class="login-form" action="https://echo.gllacy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="user-login">Электронная почта</label>
+          <input id="user-login" type="email" name="email" placeholder="Электронная почта">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input id="user-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p class="login-password-info">
+          <a class="restore" href="#">Забыли пароль?</a>
+          <a class="register" href="#">Новая регистрация</a>
+        </p>
+        <button class="button" type="submit">Войти</button>
+      </form>
     </section>
     <section class="modal modal-search">
       <h2 class="visually-hidden">Поиск по сайту</h2>
-      <!-- Здесь будет форма для ввода поискового запроса -->
+      <form class="search" action="https://echo.gllacy.ru" method="get">
+        <label class="visually-hidden" for="search">Что ищем?</label>
+        <input id="search" type="text" name="search" placeholder="Что ищем?">
+        <button class="button button-search" type="submit">Найти</button>
+      </form>
     </section>
     <section class="modal modal-shopping-cart">
       <h2 class="visually-hidden">Товары в корзине</h2>
       <!-- Здесь будет окно с содержимым корзины -->
+      <table>
+        <tr>
+          <td><button type="button" name="cancel">Убрать из списка</button></td>
+          <td>
+            <img src="img/product-1-mini.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+            Пломбир с апельсиновым джемом</td>
+          <td>1,5 кг х 200 руб.</td>
+          <td>300 руб.</td>
+        </tr>
+        <tr>
+          <td><button type="button" name="cancel">Убрать из списка</button></td>
+          <td>
+            <img src="img/product-3-mini.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+            Клубничный пломбир с присыпкой из белого шоколада</td>
+          <td>1,5 кг х 300 руб.</td>
+          <td>450 руб.</td>
+        </tr>
+      </table>
     </section>
   </body>
 </html>
