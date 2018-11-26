@@ -195,7 +195,7 @@
     <section class="modal modal-login">
       <h2 class="visually-hidden">Личный кабинет</h2>
       <p class="visually-hidden">Введите свою электронную почту и пароль.</p>
-      <form class="login-form" action="https://echo.gllacy.ru" method="post">
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label class="visually-hidden" for="user-login">Электронная почта</label>
           <input id="user-login" type="email" name="email" placeholder="Электронная почта">
@@ -213,7 +213,7 @@
     </section>
     <section class="modal modal-search">
       <h2 class="visually-hidden">Поиск по сайту</h2>
-      <form class="search" action="https://echo.gllacy.ru" method="get">
+      <form class="search" action="https://echo.htmlacademy.ru" method="get">
         <label class="visually-hidden" for="search">Что ищем?</label>
         <input id="search" type="text" name="search" placeholder="Что ищем?">
         <button class="button button-search" type="submit">Найти</button>
@@ -221,7 +221,6 @@
     </section>
     <section class="modal modal-shopping-cart">
       <h2 class="visually-hidden">Товары в корзине</h2>
-      <!-- Здесь будет окно с содержимым корзины -->
       <table>
         <tr>
           <td><button type="button" name="cancel">Убрать из списка</button></td>
@@ -239,7 +238,11 @@
           <td>1,5 кг х 300 руб.</td>
           <td>450 руб.</td>
         </tr>
+        <tr>
+          <td colspan="4">Итого: 750 руб.</td>
+        </tr>
       </table>
+      <button class="button" type="button">Оформить заказ</button>
     </section>
   </body>
 </html>
