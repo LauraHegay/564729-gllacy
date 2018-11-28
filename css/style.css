@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial,  sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+.main-navigation li{
+  list-style: none;
+}
+
+.site-navigation {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.user-navigation {
+  font-weight: medium;
+}
+
+.site-navigation a,
+.user-navigation a
+ {
+    color: #ffffff;
+}
+
+.site-navigation-submenu a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: #323232;
+  width: 143px;
+}
+
+.site-navigation-submenu  {
+  width: 143px;
+  background-color: #f8f7f4;
+  border-radius: 2px;
+}
+
+.novelty  {
+  border-bottom: 1px solid #d1d0ce;
+}
+
+.novelty a {
+  font-weight: bold;
+}
+/*Временно скрыла модальные окна*/
+.modal {
+  display: none;
+}
