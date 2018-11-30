@@ -32,14 +32,22 @@ a {
   line-height: 18px;
 }
 
-.user-navigation {
-  font-weight: medium;
+.site-navigation a {
+  color: #ffffff;
+
+  border-bottom: 1px solid #adbdb4;
 }
 
-.site-navigation a,
-.user-navigation a
- {
-    color: #ffffff;
+.site-navigation a:hover,
+.site-navigation a:focus,
+.site-navigation a:active {
+  color: #323232;
+}
+
+.site-navigation-submenu  {
+  width: 143px;
+  background-color: #f8f7f4;
+  border-radius: 2px;
 }
 
 .site-navigation-submenu a {
@@ -48,12 +56,9 @@ a {
   font-weight: normal;
   color: #323232;
   width: 143px;
-}
+  border-bottom: 0;
 
-.site-navigation-submenu  {
-  width: 143px;
-  background-color: #f8f7f4;
-  border-radius: 2px;
+
 }
 
 .novelty  {
@@ -63,6 +68,37 @@ a {
 .novelty a {
   font-weight: bold;
 }
+
+.user-navigation {
+  font-weight: medium;
+}
+
+.user-navigation-button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+
+  background-color: #9db1a5;
+  border: none;
+}
+
+.user-navigation-button:hover,
+.user-navigation-button:focus,
+.user-navigation-button:active {
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+
+
+
+
+
+
+
 /*Временно скрыла модальные окна*/
 .modal {
   display: none;
