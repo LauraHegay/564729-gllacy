@@ -11,8 +11,21 @@ body {
   background-color: #849d8f;
 }
 
+
+
 a {
   text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .main-navigation {
@@ -50,6 +63,16 @@ a {
   border-radius: 2px;
 }
 
+.site-navigation-submenu li:hover  {
+  background-color: #fbded7;
+}
+
+.site-navigation-submenu li:focus,
+.site-navigation-submenu li:active  {
+  background-color: #f6b5a5;
+}
+
+
 .site-navigation-submenu a {
   font-size: 14px;
   line-height: 16px;
@@ -57,8 +80,14 @@ a {
   color: #323232;
   width: 143px;
   border-bottom: 0;
+}
 
+.site-navigation-submenu .current {
+  background-color: #d07058;
+}
 
+.current > a {
+    color: #ffffff;
 }
 
 .novelty  {
@@ -74,6 +103,8 @@ a {
 }
 
 .user-navigation-button {
+  margin: 0px;
+  padding: 0px;
   font: inherit;
 
   text-align: center;
@@ -92,10 +123,150 @@ a {
   background-color: #f8f7f4;
 }
 
+.features {
+  color: #323232;
 
 
+  background-color: #ecddc1;
+  background-image: url("../img/wafer-fon.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.features p {
+  font-size: 24px;
+  line-height: 30px;
+
+}
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+}
+
+.blog {
+  width: 560px;
+  min-height: 220px;
+  color: #323232;
+
+  background-color: #ffffff;
+  background-image: url("../img/strawberry-fon.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  border-radius: 15px;
+}
 
 
+.blog h2 {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.blog a {
+  color: #323232;
+  text-decoration: underline;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.subscribe {
+  background-color: #f8f7f4;
+  /*background-image: url("../img/post-fon.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;*/
+}
+
+.subscribe p {
+  color: #5a5a5a;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+}
+
+.subscribe input {
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+  font-weight: normal;
+
+  border: 1px solid #c7c6c5;
+  border-radius: 5px;
+}
+
+.subscribe input:hover {
+  box-shadow: 0 0 0 2px #c7c6c5;
+}
+
+.subscribe input:focus {
+  box-shadow: 0 0 0 2px #8fbdec;
+}
+
+.subscribe input:not([value=""]) {
+  color: #323232;
+  font-weight: bold;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  font-size: 18px;
+  line-height: 24px;
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  border: none;
+  border-radius: 5px;
+}
+
+.button:hover,
+.button:focus {
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+}
+
+.button:focus {
+  background-image: -moz-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+}
+
+.main-footer {
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+.main-footer a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.main-footer a:hover,
+.main-footer a:focus,
+.main-footer a:active {
+  color: #ffbc9e;
+}
+
+.for-suppliers a {
+  font-weight: bold;
+}
 
 
 
