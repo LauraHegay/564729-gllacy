@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Сливочное мороженное - Магазин мороженного «Глейси»</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -13,8 +16,8 @@
       </div>
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li class="site-navigation-current">
-              Каталог
+          <li>
+              <span class="site-navigation-current">Каталог</span>
               <ul class="site-navigation-submenu">
                 <li><a class="novelty" href="novelty.html">Новинки</a></li>
                 <li><a href="creamy.html">Сливочное</a></li>
@@ -28,11 +31,10 @@
         </ul>
         <ul class="user-navigation">
           <li class="search">
-            <button class="button user-menu-button" type="button" >Поиск</button>
+            <button class="user-navigation-button" type="button" name="button">Поиск</button>
           </li>
-          <li><a class="button user-menu-button" href="login.html">Вход</a></li>
-          <li class="shopping-cart-full">
-            <button class="button user-menu-button" type="button">2 товара</button></li>
+          <li><a class="login-link user-navigation-button" href="login.html">Вход</a></li>
+          <li><a class="shopping-cart user-navigation-button">2 товара</a></li>
         </ul>
       </nav>
       <p class="time-work">С 10 до 20, ежедневно</p>
@@ -41,21 +43,25 @@
     <main class="container">
       <h1 class="page-title">Сливочное мороженное</h1>
       <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="#">Каталог</a></li>
+        <li><a href="index.html">Главная</a> &raquo;</li>
+        <li><a href="#">Каталог</a> &raquo;</li>
         <li class="breadcrumbs-current">Сливочное</li>
       </ul>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <!-- Здесь будет форма для фильтрации-->
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <label for="sort">Сортировка:</label>
+          <input type="text" name="" >
+        </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список видов мороженного</h2>
-        <ul>
+        <ul class="catalog-list">
           <li class="catalog-item">
             <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
             <p class="catalog-item-image">
-                <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             </p>
             <p>
               <b>310 P/кг</b>
