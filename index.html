@@ -8,41 +8,51 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
-      <div class="logo">
-        <a class="main-header-logo">
-          <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженного «Глейси»">
-        </a>
-      </div>
-      <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li>
-            <a>Каталог</a>
-            <ul class="site-navigation-submenu">
-              <li class="novelty"><a href="novelty.html">Новинки</a></li>
-              <li><a href="creamy.html">Сливочное</a></li>
-              <li class="current"><a href="sherbet.html">Щербеты</a></li>
-              <li><a href="fruit-ice.html">Фруктовый лед</a></li>
-              <li><a href="melorin.html">Мелорин</a></li>
+    <div class="container">
+      <header class="main-header">
+          <div class="logo">
+            <a class="main-header-logo">
+              <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженного «Глейси»">
+            </a>
+          </div>
+          <nav class="main-navigation">
+            <ul class="site-navigation">
+              <li>
+                <a>Каталог</a>
+                <ul class="site-navigation-submenu">
+                  <li class="novelty"><a href="novelty.html">Новинки</a></li>
+                  <li><a href="creamy.html">Сливочное</a></li>
+                  <li class="current"><a href="sherbet.html">Щербеты</a></li>
+                  <li><a href="fruit-ice.html">Фруктовый лед</a></li>
+                  <li><a href="melorin.html">Мелорин</a></li>
+                </ul>
+              </li>
+              <li><a href="deliveri-and-payment.html">Доставка и оплата</a></li>
+              <li><a href="about-company">О Компании</a></li>
             </ul>
-          </li>
-          <li><a href="deliveri-and-payment.html">Доставка и оплата</a></li>
-          <li><a href="about-company">О Компании</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li class="search">
-            <button class="user-navigation-button" type="button" name="button">Поиск</button>
-          </li>
-          <li><a class="login-link user-navigation-button" href="login.html">Вход</a></li>
-          <li><a class="shopping-cart user-navigation-button">Пусто</a></li>
-        </ul>
-      </nav>
-      <p class="time-work">С 10 до 20, ежедневно</p>
-      <p class="contacts">8 812 450-25-25</p>
-    </header>
+            <ul class="user-navigation">
+              <li class="search">
+                <button class="user-navigation-button" type="button" name="button">Поиск</button>
+              </li>
+              <li><a class="login-link user-navigation-button" href="login.html">Вход</a></li>
+              <li><a class="shopping-cart user-navigation-button">Пусто</a></li>
+            </ul>
+          </nav>
+      </header>
+    </div>
     <main class="container">
       <h1 class="visually-hidden">Магазин мороженного «Глейси»</h1>
-      <!-- Здесь будет слайдер -->
+      <div class="contact-time">
+        <p class="time-work">С 10 до 20, ежедневно</p>
+        <p class="phone">8 812 450-25-25</p>
+      </div>
+      <section class="slider">
+        <h2 class="visually-hidden">Особые предложения</h2>
+        <h3>Крем-брюле и пломбир <br> с  малиновым джемом</h3>
+        <img src="img/slider-image1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
+        <p><a class="button" href="#">Давайте оба!</a></p>
+
+      </section>
       <section class="promotions">
         <h2 class="visually-hidden">Промо-акции</h2>
         <ul class="promotions-list">
@@ -63,11 +73,11 @@
         <ul class="popular-product-list">
           <li class="popular-product-item">
             <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-            <p class="popular-product-item-image">
+            <p class="catalog-item-image">
                 <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             </p>
             <p>
-              <b>310 P/кг</b>
+              <b>310 &#8381;/кг</b>
             </p>
           </li>
           <li class="popular-product-item">
@@ -76,7 +86,7 @@
                 <img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
             </p>
             <p>
-              <b>380 P/кг</b>
+              <b>380 &#8381;/кг</b>
             </p>
           </li>
           <li class="popular-product-item">
@@ -85,7 +95,7 @@
                 <img src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             </p>
             <p>
-              <b>355 P/кг</b>
+              <b>355 &#8381;/кг</b>
             </p>
           </li>
           <li class="popular-product-item">
@@ -94,7 +104,7 @@
                 <img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
             </p>
             <p>
-              <b>415 P/кг</b>
+              <b>415 &#8381;/кг</b>
             </p>
           </li>
         </ul>
@@ -109,54 +119,60 @@
           <li class="feature-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
         </ul>
       </section>
-      <section class="blog">
-        <h2>Новое в нашем блоге</h2>
-        <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-      </section>
-      <section class="subscribe">
-        <h2 class="visually-hidden">Новостная рассылка</h2>
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form class="form-subscribe" action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="subscribe">Электронная почта</label>
-          <input id="subscribe" type="email" name="subscribe" placeholder="Электронная почта">
-          <button class="button" type="submit">Отправить</button>
-        </form>
-      </section>
+      <div class="wrapper">
+        <section class="blog">
+          <h2>Новое в нашем блоге</h2>
+          <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+        </section>
+        <section class="subscribe">
+          <h2 class="visually-hidden">Новостная рассылка</h2>
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <form class="form-subscribe" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="subscribe">Электронная почта</label>
+            <input id="subscribe" type="email" name="subscribe" placeholder="Электронная почта">
+            <button class="button" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
+
       <section class="contacts">
         <h2 class="visually-hidden">Наш адрес</h2>
         <img src="img/map-with-pin.jpg" width="1200" height="430" alt="Расположение на карте">
         <div>
           <h4>Адрес главного офиса и офлайн-магазина:</h4>
-          <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+          <p class="adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
           <h4>Для заказов по телефону:</h4>
-          <p>8 812 450-25-25</p>
-          <p>(с 10 до 20 ежедневно)</p>
+          <p class="phone">8 812 450-25-25</p>
+          <p class="time-work">(с 10 до 20 ежедневно)</p>
           <a class="button" href="#">Форма обратной связи</a>
         </div>
       </section>
     </main>
-    <footer class="main-footer">
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Твитер</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">ВКонтакте</a></li>
+    <div class="container">
+      <footer class="main-footer">
+        <div class="footer-social">
+          <ul>
+            <li><a class="social-button" href="#">Твитер</a></li>
+            <li><a class="social-button" href="#">Инстаграм</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">ВКонтакте</a></li>
+          </ul>
+        </div>
+        <ul class="additional-navigation">
+          <li class="for-suppliers"><a href="#">Для поставщиков</a></li>
+          <li><a href="#">Наши документы</a></li>
+          <li><a href="#">О производстве</a></li>
+          <li><a href="#">Экологические стандарты</a></li>
         </ul>
-      </div>
-      <ul class="additional-navigation">
-        <li class="for-suppliers"><a href="#">Для поставщиков</a></li>
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">О производстве</a></li>
-        <li><a href="#">Экологические стандарты</a></li>
-      </ul>
-      <div class="footer-copyright">
-        <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
-        </a>
-        <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
-      </div>
-    </footer>
+        <div class="footer-copyright">
+          <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
+          </a>
+          <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
+        </div>
+      </footer>
+    </div>
+
     <section class="modal modal-login">
       <h2 class="visually-hidden">Личный кабинет</h2>
       <p class="visually-hidden">Введите свою электронную почту и пароль.</p>

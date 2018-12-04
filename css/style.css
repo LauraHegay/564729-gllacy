@@ -15,6 +15,12 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -26,21 +32,42 @@ a {
   overflow: hidden;
 }
 
+.main-header {
+  padding-top: 9px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
 .main-navigation {
+  width: 100%;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
 
+  display: flex;
+  justify-content: space-between;
+
   background-color: #849d8f;
 }
 
-.main-navigation li{
+.main-navigation li {
   list-style: none;
 }
 
 .site-navigation {
+  padding-top: 3px;
+  padding-left: 23px;
+  width: 406px;
   font-size: 16px;
   line-height: 18px;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.site-navigation li{
+  padding-right: 29px;
 }
 
 .site-navigation a {
@@ -59,6 +86,8 @@ a {
   width: 143px;
   background-color: #f8f7f4;
   border-radius: 2px;
+
+  display: none;
 }
 
 .site-navigation-submenu li:hover  {
@@ -74,7 +103,7 @@ a {
 .site-navigation-submenu a {
   font-size: 14px;
   line-height: 16px;
-  font-weight: normal;
+  font-weight: 400;
   color: #323232;
   width: 143px;
   border-bottom: 0;
@@ -97,7 +126,18 @@ a {
 }
 
 .user-navigation {
+  width: 267px;
   font-weight: 500;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user-navigation li {
+    padding-left: 10px;
+    height: 32px;
+    width: 40px;
+    background-color: #9db1a5;
 }
 
 .user-navigation-button {
@@ -123,6 +163,8 @@ a {
 
 .features {
   color: #323232;
+  border-radius: 15px;
+  margin-bottom: 40px;
 
 
   background-color: #ecddc1;
@@ -144,7 +186,7 @@ a {
 .feature-item {
   font-size: 16px;
   line-height: 22px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .blog {
@@ -175,6 +217,9 @@ a {
 
 .subscribe {
   background-color: #f8f7f4;
+  width: 560px;
+  min-height: 220px;
+  border-radius: 15px;
   /*background-image: url("../img/post-fon.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;*/
@@ -184,14 +229,14 @@ a {
   color: #5a5a5a;
   font-size: 16px;
   line-height: 22px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .subscribe input {
   font-size: 16px;
   line-height: 24px;
   color: #999999;
-  font-weight: normal;
+  font-weight: 400;
 
   border: 1px solid #c7c6c5;
   border-radius: 5px;
@@ -207,6 +252,12 @@ a {
 
 .subscribe input:not([value=""]) {
   color: #323232;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .button {
@@ -244,7 +295,10 @@ a {
   color: #ffffff;
   font-size: 13px;
   line-height: 18px;
-  font-weight: normal;
+  font-weight: 400;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-footer ul {
@@ -279,7 +333,7 @@ a {
   color: #ffffff;
   font-size: 14px;
   line-height: 16px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 
@@ -290,10 +344,10 @@ a {
 }
 
 .breadcrumbs-current {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .catalog-list {
@@ -321,6 +375,115 @@ a {
   font-weight: 500;
   text-decoration: underline;
   text-align: center;
+}
+
+.main-header-logo {
+  width: 154px;
+  height: 64px;
+}
+
+.promotions ul {
+  list-style: none;
+}
+
+.promotions h3 {
+  font-size: 35px;
+  line-height: 41px;
+  color: #ffffff;
+}
+
+.promotions p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.promotions li:first-child {
+  width: 560px;
+  min-height: 220px;
+
+
+  background-color: #990033;
+  background-image: url("../img/promotions-item-fon1.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+
+.promotions li:last-child {
+  width: 560px;
+  min-height: 220px;
+
+  background-color: #4a2d21;
+  background-image: url("../img/promotions-item-fon2.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+
+.popular-product ul {
+  list-style: none;
+}
+
+.popular-product h3 {
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: underline;
+  font-weight: 500;
+  text-align: center;
+}
+
+.popular-product b {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.slider h3 {
+  font-size: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.slider .button {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.slider p {
+  text-align: center;
+}
+
+.contact-time p {
+  font-size: 32px;
+  line-height: 44px;
+  text-align: right;
+}
+
+.contact-time .time-work {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.contact-time .phone {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.contacts {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.contacts h4,
+.contacts .time-work {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.contacts .phone,
+.contacts .adress {
+  font-size: 18px;
+  line-height: 24px;
 }
 
 
