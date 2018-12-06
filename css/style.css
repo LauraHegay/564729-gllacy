@@ -536,19 +536,6 @@ a {
   border-radius: 20px;
 }
 
-.price-controls::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  width: 2px;
-  height: 22px;
-
-  background: #ffffff;
-  transform: translate(-50%, -50%);
-}
-
 .price-controls label {
   display: inline-block;
   cursor: pointer;
@@ -561,20 +548,31 @@ a {
 }
 
 .price-controls input {
-  width: 50px;
-  margin: 0;
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
 
-  color: inherit;
-  font: inherit;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
 
-  background: none;
   border: none;
 }
 
 .range-controls {
   position: relative;
 
-  margin-bottom: 32px;
+  height: 36px;
+  margin-bottom: 10px;
+  padding-top: 14px;
+  padding-right: 22px;
+  padding-left: 22px;
+
+  background-color: rgba(248, 250, 249, 0.2);
+
+  border-radius: 20px;
+
 }
 
 .range-controls .scale {
@@ -584,7 +582,9 @@ a {
 }
 
 .range-controls .bar {
-  width: 80%;
+  margin: 10px;
+  margin-left: 50px;
+  width: 60%;
   height: 4px;
 
   background: rgba(248, 247, 244, 1);
@@ -592,7 +592,7 @@ a {
 
 .range-toggle {
   position: absolute;
-  top: -9px;
+  top: 16px;
 
   width: 4px;
   height: 4px;
@@ -609,7 +609,7 @@ a {
 }
 
 .range-toggle-min {
-  left: 0;
+  left: 10;
 }
 
 .range-toggle-max {
