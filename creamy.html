@@ -8,36 +8,38 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
-      <div class="logo">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженного «Глейси»">
-        </a>
-      </div>
-      <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li>
-              <span class="site-navigation-current">Каталог</span>
-              <ul class="site-navigation-submenu">
-                <li><a class="novelty" href="novelty.html">Новинки</a></li>
-                <li><a href="creamy.html">Сливочное</a></li>
-                <li><a href="sherbet.html">Щербеты</a></li>
-                <li><a href="fruit-ice.html">Фруктовый лед</a></li>
-                <li><a href="melorin.html">Мелорин</a></li>
-              </ul>
-          </li>
-          <li><a href="deliveri-and-payment.html">Доставка и оплата</a></li>
-          <li><a href="about-company">О Компании</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li class="search">
-            <button class="user-navigation-button" type="button" name="button">Поиск</button>
-          </li>
-          <li><a class="login-link user-navigation-button" href="login.html">Вход</a></li>
-          <li><a class="shopping-cart user-navigation-button">2 товара</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="container">
+      <header class="main-header">
+        <div class="logo">
+          <a class="main-header-logo" href="index.html">
+            <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженного «Глейси»">
+          </a>
+        </div>
+        <nav class="main-navigation">
+          <ul class="site-navigation">
+            <li>
+                <span class="site-navigation-current">Каталог</span>
+                <ul class="site-navigation-submenu">
+                  <li><a class="novelty" href="novelty.html">Новинки</a></li>
+                  <li><a href="creamy.html">Сливочное</a></li>
+                  <li><a href="sherbet.html">Щербеты</a></li>
+                  <li><a href="fruit-ice.html">Фруктовый лед</a></li>
+                  <li><a href="melorin.html">Мелорин</a></li>
+                </ul>
+            </li>
+            <li><a href="deliveri-and-payment.html">Доставка и оплата</a></li>
+            <li><a href="about-company">О Компании</a></li>
+          </ul>
+          <ul class="user-navigation">
+            <li class="search">
+              <button class="user-navigation-button" type="button" name="button">Поиск</button>
+            </li>
+            <li><a class="login-link user-navigation-button" href="login.html">Вход</a></li>
+            <li><a class="shopping-cart user-navigation-button">2 товара</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
     <main class="container">
       <h1 class="page-title">Сливочное мороженное</h1>
       <ul class="breadcrumbs">
@@ -51,11 +53,10 @@
       </div>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма для фильтрации-->
+        <!--
         <form action="https://echo.htmlacademy.ru" method="get">
           <label for="sort">Сортировка:</label>
           <input type="text" name="" >
-<!--фильтр Цена: НАЧАЛО-->
           <div class="filter-range">
             <div class="filter-range-title">Цена:  руб. - 500 руб.</div>
             <div class="price-controls">
@@ -75,8 +76,8 @@
               </div>
             <button class="btn-transparent" type="submit">Применить</button>
           </div>
-<!--фильтр Цена: КОНЕЦ-->
         </form>
+        -->
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список видов мороженного</h2>
@@ -199,28 +200,30 @@
         </ul>
       </section>
     </main>
-    <footer class="main-footer ">
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Твитер</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">ВКонтакте</a></li>
+    <div class="container">
+      <footer class="main-footer ">
+        <div class="footer-social">
+          <ul>
+            <li><a class="social-button" href="#">Твитер</a></li>
+            <li><a class="social-button" href="#">Инстаграм</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">ВКонтакте</a></li>
+          </ul>
+        </div>
+        <ul class="additional-navigation">
+          <li class="for suppliers"><a href="#">Для поставщиков</a></li>
+          <li><a href="#">Наши документы</a></li>
+          <li><a href="#">О производстве</a></li>
+          <li><a href="#">Экологические стандарты</a></li>
         </ul>
-      </div>
-      <ul class="additional-navigation">
-        <li class="for suppliers"><a href="#">Для поставщиков</a></li>
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">О производстве</a></li>
-        <li><a href="#">Экологические стандарты</a></li>
-      </ul>
-      <div class="footer-copyright">
-        <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
-        </a>
-        <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>&copy; 2017</p>
-      </div>
-    </footer>
+        <div class="footer-copyright">
+          <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
+          </a>
+          <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>&copy; 2017</p>
+        </div>
+      </footer>
+    </div>
     <section class="modal modal-login">
       <h2 class="visually-hidden">Личный кабинет</h2>
       <p class="visually-hidden">Введите свою электронную почту и пароль.</p>
