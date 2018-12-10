@@ -53,31 +53,87 @@
       </div>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!--
         <form action="https://echo.htmlacademy.ru" method="get">
-          <label for="sort">Сортировка:</label>
-          <input type="text" name="" >
-          <div class="filter-range">
-            <div class="filter-range-title">Цена:  руб. - 500 руб.</div>
-            <div class="price-controls">
-              <label class="min-price">
-                <input type="text" name="min-price" value="100" placeholder="100">руб.
-              </label>
-              <label class="max-price">
-                <input type="text" name="max-price" value="500">руб.
-              </label>
-            </div>
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
-                </div>
-                <div class="range-toggle range-toggle-min"></div>
-                <div class="range-toggle range-toggle-max"></div>
+          <fieldset>
+            <legend>Сортировка:</legend>
+            <select class="" name="">
+              <option value="">по популярности</option>
+              <option value="">сначала недорогие</option>
+              <option value="">сначала дорогие</option>
+              <option value="">по жирности</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Цена:</legend>
+            <label for="sort">Сортировка:</label>
+            <input type="text" name="" >
+            <div class="filter-range">
+              <div class="filter-range-title">Цена:  руб. - 500 руб.</div>
+              <div class="price-controls">
+                <label class="min-price">
+                  <input type="text" name="min-price" value="100" placeholder="100">руб.
+                </label>
+                <label class="max-price">
+                  <input type="text" name="max-price" value="500">руб.
+                </label>
               </div>
-            <button class="btn-transparent" type="submit">Применить</button>
-          </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Жирность:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" id="filter-zero" value="0">
+                <label for="filter-zero">0&#37;</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" id="filter-before-ten" value="before-10">
+                <label for="filter-before-ten">до 10&#37;</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" id="filter-before-thirty" value="before-30">
+                <label for="filter-before-thirty">до 30&#37;</label>
+                </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" id="filter-after-thirty" value="after-30">
+                <label for="filter-after-thirty">выше 30&#37;</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Наполнители:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chocolate" id="filter-chocolate" checked>
+                <label for="filter-chocolate">шоколадные</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sugar-powders" id="filter-sugar-powders" checked>
+                <label for="filter-sugar-powders">сахарные присыпки</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-fruits" name="fruits">
+                <label for="filter-fruits">фрукты</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-syrups" name="syrups">
+                <label for="filter-syrups">сиропы</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-jams" name="jams">
+                <label for="filter-jams">джемы</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="filter-button button" type="submit">Применить</button>
         </form>
-        -->
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список видов мороженного</h2>
@@ -191,13 +247,17 @@
             </p>
           </li>
         </ul>
-        <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a>1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">4</a></li>
-          <li class="pagination-item"><a href="#">5</a></li>
-        </ul>
+        <div class="pagination-wrapper">
+          <ul class="pagination-list">
+            <li class="pagination-item pagination-back"><a href="#"><span class="visually-hidden">Назад</span></a></li>
+            <li class="pagination-item pagination-item-current"><a>1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item"><a href="#">4</a></li>
+            <li class="pagination-item"><a href="#">5</a></li>
+            <li class="pagination-item pagination-forward"><a href="#"><span class="visually-hidden">Вперед</span></a></li>
+          </ul>
+        </div>
       </section>
     </main>
     <div class="container">

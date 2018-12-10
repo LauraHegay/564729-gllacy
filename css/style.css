@@ -736,28 +736,93 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
 }
 
-.pagination-list {
-  list-style: none;
+.pagination-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 1146px;
+  outline: 1px solid #ffffff;
 }
 
-.pagination-list a {
+.pagination-list {
+  display: flex;
+  width: 267px;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  outline: 1px solid #ffffff;
+}
+
+.pagination-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
   color: #ffffff;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
 }
 
+.pagination-item-current a {
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: #323232;
+}
+
+.pagination-forward,
+.pagination-back {
+  margin-top: 5px;
+  margin-right: 13px;
+  width: 8px;
+  height: 12px;
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  vertical-align:bottom;
+}
+
+.pagination-back {
+  transform: rotate(180deg);
+  opacity: 0.2;
+}
+
 .pagination-list a:hover,
 .pagination-list a:focus {
   background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+/*
+
+
+
+/*
+
+
+
+
+.pagination-item {
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+
+  width: 28px;
+  height: 28px;
 }
 
 .pagination-list a:active,
 .pagination-item-current a {
+  display: inline-block;
   background-color: #ffffff;
   color: #323232;
-}
 
+}
+*/
+
+*/
 /*Стили для раздела фильта Цена:*/
 
 .filter-range {
@@ -956,6 +1021,8 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;
     background-position: 0 0;
   }
+
+
 
 
 /*Временно скрыла модальные окна*/
