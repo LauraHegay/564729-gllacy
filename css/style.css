@@ -576,6 +576,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
+
 .main-header-logo {
   width: 154px;
   height: 64px;
@@ -725,9 +726,9 @@ input[type="radio"].visually-hidden {
 }
 
 .contact-time .phone {
-    display: block;
-    margin-bottom: 0;
-    margin-top: 6px;
+  display: block;
+  margin-bottom: 0;
+  margin-top: 6px;
   font-size: 22px;
   line-height: 24px;
 }
@@ -753,50 +754,45 @@ input[type="radio"].visually-hidden {
 .pagination-wrapper {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 60px;
   width: 1146px;
-  outline: 1px solid #ffffff;
 }
 
 .pagination-list {
   display: flex;
-  width: 267px;
-  text-align: center;
   flex-wrap: wrap;
-  justify-content: flex-end;
-  margin: 0;
+
   padding: 0;
+  margin: 0;
 
   list-style: none;
-  outline: 1px solid #ffffff;
+}
+
+.pagination-item {
+  margin-left: 3px;
+}
+
+.pagination-item:first-child {
+  margin-left: 0;
 }
 
 .pagination-item a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 26px;
-  height: 26px;
-  color: #ffffff;
+  display: block;
+  padding: 5px 10px 4px 10px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-}
 
-.pagination-item-current a {
-  background-color: #ffffff;
-  border-radius: 50%;
-  color: #323232;
+  color: #ffffff;
 }
 
 .pagination-forward,
 .pagination-back {
-  margin-top: 5px;
-  margin-right: 13px;
-  width: 8px;
-  height: 12px;
+  width: 13px;
+  height: 27px;
   background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
-  vertical-align:bottom;
+  background-position: center right;
 }
 
 .pagination-back {
@@ -810,6 +806,24 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
+.pagination-item-current a {
+  color: #323232;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: #323232;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+/*
+
+*/
 /*Стили для раздела фильта Цена:*/
 
 .filter-range {
