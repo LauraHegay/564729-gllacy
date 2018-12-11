@@ -769,7 +769,10 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-item {
+  display: flex;
   margin-left: 3px;
+  justify-content: flex-end;
+
 }
 
 .pagination-item:first-child {
@@ -777,27 +780,36 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-item a {
-  display: block;
-  padding: 5px 10px 4px 10px;
+
+  width: 23px;
+  height: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  text-align: center;
+  padding-top: 3px;
+
 
   color: #ffffff;
+
 }
 
 .pagination-forward,
 .pagination-back {
-  width: 13px;
-  height: 27px;
   background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
-  background-position: center right;
+  background-position: 50% 50%;
 }
 
 .pagination-back {
   transform: rotate(180deg);
   opacity: 0.2;
+}
+
+.pagination-forward {
+  margin-right: -8px;
 }
 
 .pagination-list a:hover,
