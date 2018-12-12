@@ -46,8 +46,6 @@ input[type="radio"].visually-hidden {
   width: 100%;
   display: flex;
   justify-content: flex-start;
-
-  outline: 1px solid #ffffff;
 }
 
 .main-navigation {
@@ -58,8 +56,6 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
-
-  outline: 1px solid #ffffff;
 }
 
 .main-navigation ul {
@@ -70,12 +66,11 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  padding: 0;
+  padding-left: 10px;
 
-  margin: 0;
 
   z-index: 30;
-  /* Вспомогательные стили */
-  outline: 1px solid #ffffff;
 }
 
 .site-navigation > li {
@@ -112,41 +107,10 @@ input[type="radio"].visually-hidden {
   box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.4);
   outline: none;
 }
-/* outline: 1px solid #ffffff; */
-/*
-
-.site-navigation {
-  padding-top: 3px;
-  padding-left: 23px;
-  width: 406px;
-}
-
-.site-navigation li{
-  padding-right: 29px;
-}
-
-
-.site-navigation a {
-  color: #ffffff;
-
-  border-bottom: 1px solid #adbdb4;
-}
-
-
-
-.site-navigation-current {
- background-color: #d07058;
- border-radius: 20px;
- padding: 8px 12px;
-}
-
-*/
-
 
 .site-navigation-submenu  {
-
   position: absolute;
-  left: -20px;
+  left: -10px;
   top: 40px;
 
   display: none;
@@ -185,6 +149,12 @@ input[type="radio"].visually-hidden {
   background-color: #d07058;
 }
 
+.site-navigation .site-navigation-current {
+  border-radius: 20px;
+  background-color: #d07058;
+  text-decoration: none;
+}
+
 .site-navigation-submenu .current:hover,
 .site-navigation-submenu .current:focus,
 .site-navigation-submenu .current:active {
@@ -201,7 +171,6 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-
 .user-navigation {
   width: 267px;
   font-weight: 500;
@@ -209,8 +178,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: flex-end;
 }
-
-
 
 .user-navigation li {
     margin-left: 10px;
