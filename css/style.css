@@ -172,7 +172,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation {
-  width: 267px;
+  width: 300px;
   font-weight: 500;
 
   display: flex;
@@ -184,56 +184,30 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation-button {
-  margin: 0;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 6px;
   padding-bottom: 8px;
   padding-right: 16px;
-  font: inherit;
+  padding-left: 16px;
 
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
 
   background-color: rgba(255, 255, 255, 0.2);
-  border: none;
   border-radius: 20px;
 }
 
-.user-navigation .login-link,
-.user-navigation .shopping-cart {
-  position: relative;
-  padding-left: 45px;
+.login-link svg,
+.shopping-cart svg {
+  padding-right: 8px;
 }
 
-.login-link::before {
-  content: "";
-
-  position: absolute;
-  top: 4px;
-  left: 16px;
-
-  width: 21px;
-  height: 19px;
-
-  background-image: url("../img/entrance.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.shopping-cart::before {
-  content: "";
-
-  position: absolute;
-  top: 4px;
-  left: 16px;
-
-  width: 21px;
-  height: 20px;
-
-  background-image: url("../img/basket.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+.user-navigation .search {
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .user-navigation-button:hover,
@@ -242,6 +216,52 @@ input[type="radio"].visually-hidden {
   color: #323232;
 
   background-color: #f8f7f4;
+}
+
+.user-navigation-button:hover path,
+.user-navigation-button:focus path,
+.user-navigation-button:active path {
+  fill: #323232;
+}
+
+.user-navigation > li {
+  position: relative;
+}
+
+.user-navigation .modal-search {
+  position: absolute;
+  width: 340px;
+
+  left: -335px;
+  top: 40px;
+  display: none;
+  margin: 0;
+  padding: 20px 15px;
+
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.modal-search input[type="text"] {
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border-radius: 5px;
+  width: 100%;
+
+  font: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+
+  border-style: 1px solid rgb(211, 211, 210);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+}
+
+/*Проблема. Невозможно ввести поисковый запрос. Форма видна только при наведении. Нужно сделать так, что бы она не пропадала*/
+.user-navigation > li:hover .modal-search {
+  display: block;
 }
 
 .contact-time {
@@ -1065,6 +1085,6 @@ input[type="radio"].visually-hidden {
   }
 
 /*Временно скрыла модальные окна*/
-.modal {
+/* .modal {
   display: none;
-}
+} */
