@@ -47,11 +47,57 @@
               <a class="login-link user-navigation-button" href="login.html">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#fff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>Вход
               </a>
+              <section class="modal modal-login">
+                <h2 class="visually-hidden">Личный кабинет</h2>
+                <p class="visually-hidden">Введите свою электронную почту и пароль.</p>
+                <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                  <p>
+                    <label class="visually-hidden" for="user-login">Электронная почта</label>
+                    <input id="user-login" type="email" name="email" placeholder="Электронная почта">
+                  </p>
+                  <p>
+                    <label class="visually-hidden" for="user-password">Пароль</label>
+                    <input id="user-password" type="password" name="password" placeholder="Пароль">
+                  </p>
+                  <div class="wrapper">
+                    <p class="login-password-info">
+                      <a class="restore" href="#">Забыли пароль?</a></br>
+                      <a class="register" href="#">Новая регистрация</a>
+                    </p>
+                    <button class="button" type="submit">Войти</button>
+                  </div>
+                </form>
+              </section>
             </li>
             <li>
-              <a class="shopping-cart user-navigation-button">
+              <a class="shopping-cart shopping-cart-full user-navigation-button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><g fill="#FFF"><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></svg>2 товара
               </a>
+              <section class="modal modal-shopping-cart">
+                <h2 class="visually-hidden">Товары в корзине</h2>
+                <table>
+                  <tr>
+                    <td><button type="button" name="cancel">Убрать из списка</button></td>
+                    <td>
+                      <img src="img/product-1-mini.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                      Пломбир с апельсиновым джемом</td>
+                    <td>1,5 кг х 200 руб.</td>
+                    <td>300 руб.</td>
+                  </tr>
+                  <tr>
+                    <td><button type="button" name="cancel">Убрать из списка</button></td>
+                    <td>
+                      <img src="img/product-3-mini.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                      Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td>1,5 кг х 300 руб.</td>
+                    <td>450 руб.</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4">Итого: 750 руб.</td>
+                  </tr>
+                </table>
+                <button class="button" type="button">Оформить заказ</button>
+              </section>
             </li>
           </ul>
         </nav>
@@ -315,57 +361,5 @@
         </div>
       </footer>
     </div>
-    <section class="modal modal-login">
-      <h2 class="visually-hidden">Личный кабинет</h2>
-      <p class="visually-hidden">Введите свою электронную почту и пароль.</p>
-      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label class="visually-hidden" for="user-login">Электронная почта</label>
-          <input id="user-login" type="email" name="email" placeholder="Электронная почта">
-        </p>
-        <p>
-          <label class="visually-hidden" for="user-password">Пароль</label>
-          <input id="user-password" type="password" name="password" placeholder="Пароль">
-        </p>
-        <p class="login-password-info">
-          <a class="restore" href="#">Забыли пароль?</a>
-          <a class="register" href="#">Новая регистрация</a>
-        </p>
-        <button class="button" type="submit">Войти</button>
-      </form>
-    </section>
-    <section class="modal modal-search">
-      <h2 class="visually-hidden">Поиск по сайту</h2>
-      <form class="search" action="https://echo.htmlacademy.ru" method="get">
-        <label class="visually-hidden" for="search">Что ищем?</label>
-        <input id="search" type="text" name="search" placeholder="Что ищем?">
-        <button class="button button-search" type="submit">Найти</button>
-      </form>
-    </section>
-    <section class="modal modal-shopping-cart">
-      <h2 class="visually-hidden">Товары в корзине</h2>
-      <table>
-        <tr>
-          <td><button type="button" name="cancel">Убрать из списка</button></td>
-          <td>
-            <img src="img/product-1-mini.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-            Пломбир с апельсиновым джемом</td>
-          <td>1,5 кг х 200 руб.</td>
-          <td>300 руб.</td>
-        </tr>
-        <tr>
-          <td><button type="button" name="cancel">Убрать из списка</button></td>
-          <td>
-            <img src="img/product-3-mini.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-            Клубничный пломбир с присыпкой из белого шоколада</td>
-          <td>1,5 кг х 300 руб.</td>
-          <td>450 руб.</td>
-        </tr>
-        <tr>
-          <td colspan="4">Итого: 750 руб.</td>
-        </tr>
-      </table>
-      <button class="button" type="button">Оформить заказ</button>
-    </section>
   </body>
 </html>

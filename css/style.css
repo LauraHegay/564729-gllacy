@@ -224,26 +224,55 @@ input[type="radio"].visually-hidden {
   fill: #323232;
 }
 
-.user-navigation > li {
+.user-navigation-button:hover circle,
+.user-navigation-button:focus circle,
+.user-navigation-button:active circle {
+  fill: #323232;
+}
+
+.shopping-cart-full:hover:first-of-type path,
+.shopping-cart-full:focus:first-of-type path,
+.shopping-cart-full:active:first-of-type path {
+  fill: #E84D37;
+}
+
+.user-navigation li {
   position: relative;
 }
 
-.user-navigation .modal-search {
-  position: absolute;
-  width: 340px;
+.modal {
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    background-color: #f8f7f4;
+    border-radius: 5px;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+    z-index: 29;
+}
 
-  left: -335px;
-  top: 40px;
+.user-navigation .modal-search {
+  width: 340px;
   display: none;
   margin: 0;
   padding: 20px 15px;
-
-  background-color: #f8f7f4;
-  border-radius: 5px;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
-.modal-search input[type="text"] {
+.user-navigation .modal-login {
+  width: 340px;
+  margin: 0;
+  padding: 20px 15px;
+}
+
+.user-navigation .modal-shopping-cart {
+  width: 540px;
+  margin: 0;
+  padding: 20px 15px;
+  display: none;
+}
+
+.modal-search input[type="text"],
+.modal-login input[type="email"],
+.modal-login input[type="password"] {
   box-sizing: border-box;
   padding: 10px 15px;
   border-radius: 5px;
@@ -254,15 +283,37 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 24px;
 
-  border-style: 1px solid rgb(211, 211, 210);
+  border: 1px solid rgb(211, 211, 210);
   border-radius: 5px;
   background-color: rgb(255, 255, 255);
 }
 
-/*Проблема. Невозможно ввести поисковый запрос. Форма видна только при наведении. Нужно сделать так, что бы она не пропадала*/
 .user-navigation > li:hover .modal-search {
   display: block;
 }
+
+.modal-login .wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  outline: 1px solid #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.modal .button {
+  padding-top: 4px;
+  padding-bottom: 11px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
 
 .contact-time {
   position: absolute;
@@ -493,12 +544,6 @@ input[type="radio"].visually-hidden {
 
 .subscribe input:not([value=""]) {
   color: #323232;
-}
-
-.wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
 }
 
 .button {
