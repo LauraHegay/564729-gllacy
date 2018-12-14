@@ -439,11 +439,11 @@ input[type="radio"].visually-hidden {
 }
 
 .features {
+  padding: 27px 20px;
+  padding-bottom: 2px;
+  margin-bottom: 40px;
   color: #323232;
   border-radius: 15px;
-  margin-bottom: 40px;
-
-
   background-color: #ecddc1;
   background-image: url("../img/wafer-fon.jpg");
   background-position: 50% 50%;
@@ -451,11 +451,12 @@ input[type="radio"].visually-hidden {
 }
 
 .features p {
+  /* margin-bottom: 25px; */
   display: inline-block;
-  margin-bottom: 25px;
+  padding: 0;
+  margin: 0;
   font-size: 24px;
   line-height: 30px;
-
 }
 
 .features-list {
@@ -468,20 +469,53 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-item {
+  position:relative;
+
   width: 482px;
-  margin-bottom: 25px;
+  padding-top: 20px;
+  margin-bottom: 10px;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
 }
 
 .feature-item:nth-child(2n+1) {
-  padding-left: 78px;
+  padding-left: 58px;
 }
 
 .feature-item:nth-child(2n) {
-  padding-right: 20px;
+  /* padding-right: 20px; */
   padding-left: 58px;
+}
+
+.feature-item::after {
+    content: "";
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    width: 49px;
+    height: 49px;
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.feature-item:nth-child(1)::after {
+  background-image: url("../img/ice-cream.svg");
+}
+
+.feature-item:nth-child(2)::after {
+  background-image: url("../img/cow.svg");
+}
+
+.feature-item:nth-child(3)::after {
+  background-image: url("../img/eco.svg");
+}
+
+.feature-item:nth-child(4)::after {
+  background-image: url("../img/thermometer.svg");
 }
 
 .blog {
@@ -512,9 +546,10 @@ input[type="radio"].visually-hidden {
 
 .subscribe {
   background-color: #f8f7f4;
-  width: 560px;
-  min-height: 220px;
+  width: 508px;
+  min-height: 150px;
   border-radius: 15px;
+  padding: 35px 26px;
 }
 
 .subscribe p {
@@ -1128,6 +1163,9 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;
     background-position: 0 0;
   }
+
+
+
 
 /*Временно скрыла модальные окна*/
 /* .modal {
