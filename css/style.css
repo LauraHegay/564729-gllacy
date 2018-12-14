@@ -272,7 +272,8 @@ input[type="radio"].visually-hidden {
 
 .modal-search input[type="text"],
 .modal-login input[type="email"],
-.modal-login input[type="password"] {
+.modal-login input[type="password"],
+.subscribe input[type="email"] {
   box-sizing: border-box;
   padding: 10px 15px;
   border-radius: 5px;
@@ -518,10 +519,10 @@ input[type="radio"].visually-hidden {
 }
 
 .blog {
-  width: 560px;
-  min-height: 220px;
+  width: 520px;
+  min-height: 184px;
   color: #323232;
-
+  padding: 10px 20px;
   background-color: #ffffff;
   background-image: url("../img/strawberry-fon.jpg");
   background-position: 50% 50%;
@@ -534,28 +535,54 @@ input[type="radio"].visually-hidden {
 .blog h2 {
   font-size: 16px;
   line-height: 22px;
+  margin-bottom: 5px;
 }
 
 .blog a {
+  display: block;
+  padding-right: 220px;
   color: #323232;
   text-decoration: underline;
   font-size: 24px;
   line-height: 30px;
 }
-
 .subscribe {
-  background-color: #f8f7f4;
-  width: 508px;
-  min-height: 150px;
+  width: 560px;
+  min-height: 220px;
   border-radius: 15px;
-  padding: 35px 26px;
+
+  background-image: url("../img/post-fon.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
+
+.subscribe input[type="email"] {
+  width: 360px;
+}
+
+.subscribe .button {
+  margin: 0;
+}
+
+.subscribe .wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f7f4;
+  border-radius: 15px;
+  width: 509px;
+  min-height: 162px;
+  margin: 5px;
+  padding: 22px 20px;
+}
+
+
 
 .subscribe p {
   color: #5a5a5a;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
+  margin: 0;
 }
 
 .subscribe input {
@@ -840,7 +867,7 @@ input[type="radio"].visually-hidden {
 .contacts {
   position: relative;
   color: #323232;
-  background-color: #ffffff;
+  background-color: #cfe1c6;
   width: 1200px;
   height: 430px;
   margin: 0 auto;
@@ -879,9 +906,9 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
 }
 
-.contacts .button {
+.contacts .button,
+.subscribe .button {
   padding: 10px 26px;
-  margin-top: 10px;
 }
 
 .pagination-wrapper {
