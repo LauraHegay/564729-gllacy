@@ -296,7 +296,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  outline: 1px solid #ffffff;
   margin: 0;
   padding: 0;
 }
@@ -867,12 +866,32 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts {
+  position: relative;
   color: #323232;
   background-color: #ffffff;
+  width: 1200px;
+  height: 430px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+}
+
+.contacts div {
+  position: absolute;
+  width: 250px;
+  top: 62px;
+  margin: 0;
+  right: 27px;
+  padding: 28px 25px;
+  background-color: #fffffe;
+  border-radius: 15px;
 }
 
 .contacts h4,
 .contacts .time-work {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 8px;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -880,8 +899,17 @@ input[type="radio"].visually-hidden {
 
 .contacts .phone,
 .contacts .adress {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 8px;
   font-size: 18px;
   line-height: 24px;
+}
+
+.contacts .button {
+  padding: 10px 26px;
+  margin-top: 10px;
 }
 
 .pagination-wrapper {
