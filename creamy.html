@@ -77,26 +77,40 @@
                 <h2 class="visually-hidden">Товары в корзине</h2>
                 <table>
                   <tr>
-                    <td><button type="button" name="cancel">Убрать из списка</button></td>
+                    <td>
+                      <button class="remove-item-button" type="button" name="cancel">Убрать из списка
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg>
+                      </button>
+                    </td>
                     <td>
                       <img src="img/product-1-mini.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-                      Пломбир с апельсиновым джемом</td>
-                    <td>1,5 кг х 200 руб.</td>
+                    </td>
+                    <td>
+                        Пломбир с апельсиновым джемом
+                    </td>
+                    <td>1,5 кг х <span class="price">200 руб.</span></td>
                     <td>300 руб.</td>
                   </tr>
                   <tr>
-                    <td><button type="button" name="cancel">Убрать из списка</button></td>
+                    <td><button class="remove-item-button" type="button" name="cancel">Убрать из списка
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg>
+                    </button></td>
                     <td>
                       <img src="img/product-3-mini.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-                      Клубничный пломбир с присыпкой из белого шоколада</td>
-                    <td>1,5 кг х 300 руб.</td>
+                    </td>
+                    <td>
+                        Клубничный пломбир с присыпкой из белого шоколада
+                    </td>
+                    <td>1,5 кг х <span class="price">300 руб.</span></td>
                     <td>450 руб.</td>
                   </tr>
                   <tr>
-                    <td colspan="4">Итого: 750 руб.</td>
+                    <td class="total" colspan="5">Итого: 750 руб.</td>
                   </tr>
                 </table>
-                <button class="button" type="button">Оформить заказ</button>
+                <div class="wrapper">
+                  <button class="button" type="button">Оформить заказ</button>
+                </div>
               </section>
             </li>
           </ul>
