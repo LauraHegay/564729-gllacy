@@ -223,7 +223,7 @@
           <h4>Для заказов по телефону:</h4>
           <p class="phone">8 812 450-25-25</p>
           <p class="time-work">(с 10 до 20 ежедневно)</p>
-          <a class="button" href="#">Форма обратной связи</a>
+          <a class="button feedback-link" href="#">Форма обратной связи</a>
         </div>
       </section>
       <div class="container">
@@ -267,12 +267,13 @@
         </footer>
       </div>
     </div>
-    <!-- <section class="modal modal-feedback">
+    <section class="modal modal-feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
-      <form class="modal modal-feedback" action="https://echo.htmlacademy.ru" method="post">
+      <p class="modal-invitation">Мы обязательно вам ответим!</p>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="feedback-user-name">
           <label class="visually-hidden" for="feedback-user-name">Как вас зовут?</label>
-          <input id="feedback-user-name" type="text" name="name" placeholder="Как вас зовут?">
+          <input id="feedback-user-name" type="text" name="feedback-user-name" placeholder="Как вас зовут?">
         </p>
         <p class="feedback-user-email">
           <label class="visually-hidden" for="feedback-user-email">Ваша почта для ответа?</label>
@@ -280,11 +281,14 @@
         </p>
         <p class="feedback-message">
           <label class="visually-hidden" for="feedback-message">Напишите что-нибудь...</label>
-          <textarea id="feedback-message" name="feedback-message" rows="8" cols="80" placeholder="Напишите что-нибудь..."></textarea>
+          <textarea id="feedback-message" name="feedback-message" rows="6" cols="80" placeholder="Напишите что-нибудь..."></textarea>
         </p>
-        <button class="button" type="submit">Отправить</button>
+        <div class="wrapper">
+          <button class="button" type="submit">Отправить</button>
+        </div>
       </form>
       <button class="modal-close" type="button">Закрыть</button>
-    </section> -->
+    </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
