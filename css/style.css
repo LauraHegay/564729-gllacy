@@ -15,18 +15,18 @@ a {
   text-decoration: none;
 }
 
-.container {
-  width: 1146px;
-  margin: 0 auto;
-  padding: 0 27px;
-}
-
 .wrapper-main {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
 
   background-image: linear-gradient(to bottom, rgba(162, 192, 175, 0.4), #849d8f);
+}
+
+.container {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 27px;
 }
 
 .visually-hidden,
@@ -205,6 +205,8 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation li {
+  position: relative;
+
   margin-left: 10px;
 }
 
@@ -254,10 +256,6 @@ input[type="radio"].visually-hidden {
   color: #323232;
 
   background-color: #f8f7f4;
-}
-
-.user-navigation li {
-  position: relative;
 }
 
 .modal {
@@ -702,6 +700,7 @@ input[type="radio"].visually-hidden {
   font-size: 24px;
   line-height: 30px;
 }
+
 .subscribe {
   width: 560px;
   min-height: 220px;
