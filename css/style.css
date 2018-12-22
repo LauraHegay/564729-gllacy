@@ -1223,7 +1223,7 @@ input[type="radio"].visually-hidden {
   background-color: #cfe1c6;
 }
 
-.contacts div {
+.contacts .adress-container {
   position: absolute;
   top: 62px;
   right: 27px;
@@ -1276,6 +1276,19 @@ input[type="radio"].visually-hidden {
   margin-top: 22px;
   padding: 10px 26px;
 
+}
+
+.contacts .map {
+  position: relative;
+
+  width: 1200px;
+}
+
+.contacts iframe {
+  position: absolute;
+
+  top: 0;
+  left: 0;
 }
 
 .pagination-wrapper {
