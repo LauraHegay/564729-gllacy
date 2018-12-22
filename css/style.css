@@ -1242,6 +1242,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   padding-bottom: 2px;
   padding-top: 2px;
+  padding-right: 40px;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
