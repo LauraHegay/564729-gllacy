@@ -1032,9 +1032,9 @@ input[type="radio"].visually-hidden {
   border-radius: 15px;
 }
 
-.promotions li {
+/* .promotions li {
   position: relative;
-}
+} */
 
 .promotions li:last-child {
   width: 520px;
@@ -1065,20 +1065,29 @@ input[type="radio"].visually-hidden {
 
 .promotions p {
   margin-top: 16px;
+  margin-bottom: 44px;
 
   font-size: 18px;
   line-height: 22px;
 }
 
 .promotions .button {
-  position: absolute;
-
   right: 20px;
   bottom: 26px;
   padding-top: 10px;
   padding-bottom: 12px;
   padding-left: 22px;
   padding-right: 23px;
+}
+
+.promotions-item .container {
+  display: flex;
+  justify-content: flex-end;
+
+  width: 520px;
+  margin: 0;
+
+  padding: 0;
 }
 
 .popular-product ul {
@@ -1214,7 +1223,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   width: 1200px;
-  height: 430px;
+  min-height: 430px;
   margin: 0 auto;
   margin-bottom: 18px;
 
