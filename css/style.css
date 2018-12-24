@@ -283,6 +283,7 @@ input[type="radio"].visually-hidden {
 .shopping-cart-empty:active circle {
   fill: #343434;
 }
+
 .user-navigation .search {
   padding-left: 8px;
   padding-right: 8px;
@@ -1981,8 +1982,9 @@ input[type="radio"].visually-hidden {
 
 .filter-input-checkbox:checked + label::before  {
   background-image: url("../img/checkbox-on.svg");
-  background-size: 22px;
-  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-size: 24px 20px ;
+  background-position: 0 0;
 }
 
 .filter-input-radio + label::before {
