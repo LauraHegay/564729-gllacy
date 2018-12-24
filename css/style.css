@@ -615,36 +615,36 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-#product-1:checked ~ .site-wrapper {
+.radio-product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/slider-image1.png");
 }
 
-#product-2:checked ~ .site-wrapper {
+.radio-product-2:checked ~ .site-wrapper {
   background-color: #8996a6;
   background-image: url("../img/slider-image2.png");
 }
 
-#product-3:checked ~ .site-wrapper {
+.radio-product-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
   background-image: url("../img/slider-image3.png");
 }
 
-#product-1:checked ~ .site-wrapper #slide1,
-#product-2:checked ~ .site-wrapper #slide2,
-#product-3:checked ~ .site-wrapper #slide3 {
+.radio-product-1:checked ~ .site-wrapper #slide1,
+.radio-product-2:checked ~ .site-wrapper #slide2,
+.radio-product-3:checked ~ .site-wrapper #slide3 {
   display: block;
 }
 
-#product-1:checked ~ .site-wrapper label[for="product-1"],
-#product-2:checked ~ .site-wrapper label[for="product-2"],
-#product-3:checked ~ .site-wrapper label[for="product-3"] {
+.radio-product-1:checked ~ .site-wrapper label[for="product-1"],
+.radio-product-2:checked ~ .site-wrapper label[for="product-2"],
+.radio-product-3:checked ~ .site-wrapper label[for="product-3"] {
   background-color: #ffffff;
 }
 
-#product-1:hover ~ .site-wrapper label[for="product-1"],
-#product-2:hover ~ .site-wrapper label[for="product-2"],
-#product-3:hover ~ .site-wrapper label[for="product-3"] {
+.radio-product-1:hover ~ .site-wrapper label[for="product-1"],
+.radio-product-2:hover ~ .site-wrapper label[for="product-2"],
+.radio-product-3:hover ~ .site-wrapper label[for="product-3"] {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
